@@ -1,0 +1,88 @@
+body{
+	/*This determines properties for the WHOLE page unless you specify*/
+	margin: 0;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 15px;
+	line-height: 20px;
+	}
+	/*Personal pref, but prefer to keep stuff that impacts whole doc up here
+	Tab stuff in to make hierarchy more obvious.*/
+	h1, h2{
+		font-family: 'Fredoka One', cursive;
+		font-size: 35px;
+		}
+	h2{ font-size: 25px;
+		color: #8f663d;
+	 }
+
+	/*Links:*/
+	a{
+		color: #8f663d; 
+	}
+		/*Pesudoclass:*/
+		a:hover{
+			background-color: #8f663d; 
+			color: #FFFFFF;
+		}
+
+/*Properties for the 'box' everything in the header fits into*/
+header{ background-color: #8f663d; 
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 20px;
+	}
+
+	/*Properties for just the header h1 element*/
+	header h1{
+		color: white;
+
+		}
+	/*Properties for just the header photo element*/
+	header img{
+		/*If you notice stuff is looking boxy, mess with the border radius*/
+		border-radius: 170px;
+		/*Border components below are: size, style, color*/
+		border: 10px solid #FFFFFF;
+		width: 300px;
+
+		}
+
+main{
+	/*Styling for the main body of the page, aka, not header or footer*/
+	max-width: 800px;
+	margin: 0 auto;
+	/*0 is top/bottom value, auto is l/r value. Order for individual sizes:
+	Top-Right-Bottom-Left. If property is same, no need to do individual*/
+	padding: 0 20px 20px 20px;
+	}
+
+	main img{
+		/*Scaling according to max-width of the main's style! 800px here.
+		Height scales proportionally.*/
+		max-width: 100%	
+	}
+
+footer{
+	background-color: #8f663d; 
+	text-align: center;
+	color: white;
+	padding: 30px;
+	}
+
+	footer p{
+		margin: 0
+		}
+
+	footer a{
+			color: white; 
+			}
+			footer a:hover{
+				opacity: .5;
+				background-color: transparent;
+}
+
+p.caption{ 
+	color: #D9C8B7;
+	font-style: italic;
+	margin-top: 0;
+}
